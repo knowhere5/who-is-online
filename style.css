@@ -1,15 +1,22 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #282c34;
+    background-color: #04162df1;
     color: #fff;
     line-height: 1.6;
+    text-shadow: 0px 0px 10px rgba(216, 61, 255, 0.904);
 }
 
 header {
-    background: #161b22;
+    background: #174268bd;
     padding: 20px 0;
     color: #fff;
+}
+
+h1 {
+    color: rgb(82, 189, 255);
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
 
 #navbar {
@@ -17,53 +24,83 @@ header {
     justify-content: space-between;
     align-items: center;
     padding: 0 20px;
+    /* background-color: #1A1A1A; */
 }
 
 #navbar .logo {
     font-size: 1.5em;
     font-weight: bold;
-}
-
-nav ul {
-    list-style: none;
     display: flex;
+    margin-inline: 15px;
 }
 
-nav ul li {
-    margin: 0 10px;
+#navbar div {
+    display: flex;
+    margin-inline: 15px;
 }
 
-nav ul li a {
-    color: #4fa8f6;
+#navbar a {
+    color: #fff;
     text-decoration: none;
+    transition: color 0.3s ease;
 }
 
-nav ul li a:hover {
-    border-bottom: 2px solid #4fa8f6;
+#navbar a:hover {
+    color: #4fa8f6;
+    border: 1px solid rgba(255, 255, 255, 0.397);
 }
 
-.header-content {
-    text-align: center;
-    padding: 50px;
+#home,
+#features,
+#install,
+#contact {
+    /* padding-bottom: 100px; */
+    padding-bottom: auto;
+    /* padding-top: 40px; */
+}
+
+#home {
+    background: #103453bd;
+}
+
+#features {
+    background: #052847bd;
+}
+
+#install {
+    background: #04223cb9;
 }
 
 .container {
+    padding-bottom: 50px;
+    padding-inline: 50px;
     width: 80%;
     margin: auto;
     overflow: hidden;
 }
 
 .feature-list {
-    display: grid;
+    padding: 40px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 20px;
+    gap: 20px;
     margin-top: 20px;
 }
 
 .feature {
-    background: #20252d;
+    background: #0080ff00;
     padding: 20px;
     border-radius: 10px;
+    flex-basis: 30%;
+    margin-bottom: 20px;
+    border: 1px solid rgba(255, 255, 255, 0.8);
+    box-shadow: 0px 0px 10px rgba(73, 106, 214, 0.7);
+}
+
+.feature h3 {
+    color: rgb(82, 189, 255);
 }
 
 .download-button {
@@ -74,10 +111,15 @@ nav ul li a:hover {
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
+    transition: background-color 0.3s;
+}
+
+.download-button:hover {
+    background-color: #0056b3;
 }
 
 footer {
-    background: #161b22;
+    background: rgba(5, 26, 45, 0.428);
     color: #fff;
     text-align: center;
     padding: 20px 0;
@@ -88,12 +130,12 @@ footer {
         grid-template-columns: 1fr;
     }
 
-    #navbar ul {
+    #navbar {
         flex-direction: column;
         align-items: center;
     }
 
-    #navbar ul li {
+    #navbar a {
         margin: 5px 0;
     }
 }
