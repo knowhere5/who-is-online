@@ -47,7 +47,8 @@ h1 {
 
 #navbar a:hover {
     color: #4fa8f6;
-    border: 1px solid rgba(255, 255, 255, 0.397);
+    /* border: 1px solid rgba(255, 255, 255, 0.397); */
+    text-shadow: 0px 0px 10px rgba(238, 171, 255, 0.904);
 }
 
 #home,
@@ -79,6 +80,11 @@ h1 {
     overflow: hidden;
 }
 
+.container:hover {
+    background-color: #5050500e;
+    transition: background-color 0.5s;
+}
+
 .feature-list {
     padding: 40px;
     display: flex;
@@ -93,10 +99,14 @@ h1 {
     background: #0080ff00;
     padding: 20px;
     border-radius: 10px;
-    flex-basis: 30%;
+    flex-basis: 80%;
     margin-bottom: 20px;
-    border: 1px solid rgba(255, 255, 255, 0.8);
+    /* border: 1px solid rgba(255, 255, 255, 0.8); */
     box-shadow: 0px 0px 10px rgba(73, 106, 214, 0.7);
+}
+
+.feature:hover {
+    box-shadow: 0px 0px 10px rgba(89, 225, 234, 0.7);
 }
 
 .feature h3 {
